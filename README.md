@@ -17,6 +17,12 @@ There was a bonus regularization exercise. They create a nonlinear (polynomial) 
 
 ## Week 6: Programming Exercise 5: Regularized Linear Regression and Bias vs. Variance
 
+First, looking at high bias (underfitting) and high variance (overfitting) trade off. You plot some data (single predicter and response). The data is clearly non-linear. You plot a straight line to it (you are underfitting). It's crap. You examine bias-variance tradeoff. To do this, you plot a learning curve. The learning curve plots the training and validation set errors as a function of training set size. When computing the fit parameters, you do it with the n-subset of parameters and calculate the RSS errors. For the cross validation set, however, you use the fit parameters and calculate the errors over the entire validation data set. The error for the training and validation converge quickly and are high, suggesting large bias (more data doesn't help).
+
+Next, you do this for polynomial regresion. You start with a high degree polynomial to fit the model (you are overfitting). You create a learning curve and see that there is a gap between train and validation curve, suggesting large variance.
+
+Finally, you vary the regularization parameter. You plot the training and validation error vs the regularization parameter $\lambda$ to do this, you find the fit parameters with $\lambda$ on the training set. Then, you measure the cost this those fit parameters (set $\lambda = 0$ in the fit) for the training and validation set. $\lambda$ should be selected based on the minimum of the validation curve.
+
 ## Week 7: Programming Exercise 6: Support Vector Machines
 
 ## Week 8: Programming Exercise 7: K-means Clustering and Principal Component Analysis
