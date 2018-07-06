@@ -25,6 +25,10 @@ Finally, you vary the regularization parameter. You plot the training and valida
 
 ## Week 7: Programming Exercise 6: Support Vector Machines
 
+Use SVM to classify data first using a linear kernal. You can do regularization with SVM using $C$ which is like $1/\lambda$. Next using the Gaussian Kernel, you can fit non-linear boundaries. For this, you have $\sigma$ and $C$ as inputs.
+
+Next, you do a spam classifier. You parse an email and turn the words in indicies of a vocabulary list. Your feature vector is zeros/ones of words that are in the vocabulary list.
+
 ## Week 8: Programming Exercise 7: K-means Clustering and Principal Component Analysis
 
 ## Week 9: Programming Exercise 8: Amonmaly Dection and Recommmender Systems
